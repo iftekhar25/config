@@ -1,0 +1,35 @@
+set ai
+syntax on
+set expandtab
+set scroll=5
+set tabstop=4
+set hlsearch
+set background=dark
+let g:solarized_termcolors=16
+set laststatus=2
+set statusline=%<%f\ %h%w%m%r%y%=L:%l/%L\ (%p%%)
+set shiftwidth=4
+set relativenumber
+set backspace=2
+set noscrollbind
+colorscheme solarized
+filetype indent on
+au FileType html set ft=mason
+au BufNewFile,BufRead *.comp set ft=mason
+au BufNewFile,BufRead *.cg set ft=xml
+if has("gui_running")
+    set guifont=Menlo\ Regular:h16
+    set lines=500 columns=500 "max
+endif
+if has("mouse")
+    set mouse=a
+endif
+if has("mac")
+    set t_Co=256
+endif
+nmap <esc>:NT<cr> :NERDTree<cr>B
+nmap < <esc>:tabp<cr>
+nmap > <esc>:tabn<cr>
+nmap tt <esc>:tabnew<cr>
+nmap qt <esc>:tabclose<cr>
+vmap <C-S-j> !par -w72<cr>
