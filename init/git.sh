@@ -59,6 +59,5 @@ if [ -n $APITOKEN ]
 then
     git config --global github.token $APITOKEN
 fi
-
 git config --global core.editor vim
 git config --global color.ui true
