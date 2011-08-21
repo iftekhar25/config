@@ -1,0 +1,7 @@
+.*.swo
+.*.swp
+.*.swn
+*.swo
+*.swp
+*.swn
+.DS_Store
