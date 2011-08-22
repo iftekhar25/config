@@ -24,7 +24,7 @@ EMAILADDRESS=
 USERNAME=
 APITOKEN=
 
-while getopts "hn:e:u:t:v" OPTION
+while getopts "hn:e:u:t:" OPTION
 do
     case $OPTION in
         h)
