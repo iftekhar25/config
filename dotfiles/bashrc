@@ -1,0 +1,31 @@
+# .bashrc
+
+# Source global bashrc, for good measure
+
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# bash_exports
+
+if [ -f ~/.bash_export ]; then
+    . ~/.bash_export
+fi
+
+# aliases
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# keep the option open for local changes
+
+if [ -f ~/.bash_local ]; then
+    . ~/.bash_local
+fi
+
+# prompt
+
+if [ -f ~/.bash_prompt ]; then
+    . ~/.bash_prompt
+fi
