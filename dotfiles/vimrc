@@ -17,6 +17,8 @@ filetype indent on
 au FileType html set ft=mason
 au BufNewFile,BufRead *.comp set ft=mason
 au BufNewFile,BufRead *.cg set ft=xml
+au BufnewFile,BufRead bash* set ft=sh
+au BufnewFile,BufRead .bash* set ft=sh
 if has("gui_running")
     set guifont=Menlo\ Regular:h16
     set lines=500 columns=500 "max
