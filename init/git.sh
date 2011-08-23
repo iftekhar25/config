@@ -46,8 +46,7 @@ do
     esac
 done
 
-if [[ -z $FULLNAME ]] || [[ -z $EMAILADDRESS ]] || [[ -z $USERNAME ]]
-then
+if [[ -z $FULLNAME ]] || [[ -z $EMAILADDRESS ]] || [[ -z $USERNAME ]]; then
     usage
     exit 1
 fi
